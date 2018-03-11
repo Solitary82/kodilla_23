@@ -25,7 +25,7 @@ export default class Edit extends Component {
 		
 		return (
 			<div>
-				<span className={styles.value} onClick={onValueClick}>{value}</span>
+				<span className={styles.value} onClick={onValueClick}>{this.props.value}</span>
 				{onDelete ? this.renderDelete() : null}
 			</div>
 		);
